@@ -1,5 +1,7 @@
-function getResourceById(resource_id) {
-    return Promise.resolve(`awesome ${resource_id}`)
+const db = require('../../data/dbConfig')
+
+async function getResourceById(resource_id) {
+    const resource = await db('')
 }
 
 module.exports = {getResourceById}
