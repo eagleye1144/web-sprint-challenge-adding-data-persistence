@@ -1,8 +1,5 @@
 const router = require("express").Router()
 
-router.use('*', (req, res) => {
-    res.json({api: 'up'})
-})
 
 router.use((err, req, res, next)=>{
     res.status(500).json({
@@ -12,4 +9,4 @@ router.use((err, req, res, next)=>{
     })
 })
 
-module.exports - router
+module.exports = router

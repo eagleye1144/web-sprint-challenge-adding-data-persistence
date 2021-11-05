@@ -6,8 +6,8 @@
     "test": "cross-env NODE_ENV=testing jest --watchAll --verbose --runInBand --silent",
     "start": "node index.js",
     "server": "nodemon index.js",
-    "migrate": "knex migrate: latest",
-    "rollback": "knex migrate: rollback",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
     "reset": "npm run rollback && npm run migrate && npm run seed",
     "seed": "knex seed:run"
   },
@@ -27,6 +27,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "knex": "^0.95.13",
+    "node": "^17.0.1",
     "nodemon": "^2.0.14",
     "sqlite3": "^5.0.2"
   }
